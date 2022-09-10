@@ -1,0 +1,318 @@
+html {
+    width: 100%;
+}
+
+body {
+    position: relative;
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    background-color: #E8EFF5;
+}
+
+header {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    background-color: #E8EFF5;
+}
+
+.title {
+    position: relative;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 400;
+    color: #396e96;
+    padding: 20px 20px;
+}
+
+main {
+    padding: 0 75px;
+    background-color: #E8EFF5;
+}
+
+.caja1 {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    padding: 30px 100px;
+}
+
+
+.input-padron {
+    border: none;
+    overflow: auto;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    background-color: #E8EFF5;
+    color: #396e96;
+}
+
+.input-padron::placeholder {
+    color: #396e96;  
+}
+
+.caja1 p {
+    font-size: 12px;
+}
+
+.boton1 {
+    background-color: #396e96;
+    color: #ffffff;
+    border-color: #396e96;
+    border-radius: 10px;
+    padding: 10px 80px;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.boton2 {
+    background-color: #ffffff;
+    color: #396e96;
+    border-radius: 10px;
+    border-color: #396e96;
+    padding: 10px 80px;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.caja2 {
+    display: inline-block;
+    width: 30%;
+    height: 400px;
+    padding: 0px 0px;
+    background-color: #ffffff;
+    border-radius: 10%;
+}
+
+.display1 {
+    position: absolute;
+}
+
+.pantalla {
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25em;
+    background-color: #ffffff;
+    color: #396e96;
+    position: relative;
+    right: 50px;
+
+}
+
+.img-caja2 {
+    display: inline-block;
+    padding: 50px 10px;
+    position:relative;
+    left: 50px;
+}
+
+.p-caja2 {
+    display: inline-block;
+    padding: 50px 10px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    left: 40px;
+}
+
+.p1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+.p2 {
+    font-size: 0.75em;
+    padding: 5px 5px;
+}
+
+.boton3 {
+    position: relative;
+    top: 120px;
+    right: 80px;
+    display: block;
+    background-color: #ffffff;
+    color: #396e96;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+.boton3:hover {
+    scale: 120%;
+    transition: 0.5s all;
+}
+
+.boton3:active {
+    scale: 140%;
+    transition: 0.5s all;
+}
+
+footer {
+    color: #396e96;
+    text-align: center;
+
+}
+
+@media screen and (max-width:940px){
+    html {
+        width: 100%;
+    }
+
+    body {
+        text-align: center;
+        display: block;
+    }
+
+    header {
+        background-color: #E8EFF5;
+    }
+
+    .title {
+        font-style: italic;
+        font-weight: 400;
+        color: #396e96;
+        position: relative;
+        left: 120px;
+    }
+
+    main {
+        padding: 0 auto;
+        background-color: #E8EFF5;
+    }
+
+    .input-padron {
+        position: relative;
+        right: 100px;
+        border: none;
+        overflow: auto;
+        outline: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.5em;
+        background-color: #E8EFF5;
+        color: #396e96;
+    }
+
+    .caja1 {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        height: 400px;
+        padding: 30px 100px;
+    }
+
+    .caja1 p {
+        position: relative;
+        right: 20px;
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .boton1 {
+        position: relative;
+        right: 50px;
+        display: inline-block;
+        background-color: #396e96;
+        color: #ffffff;
+        border-color: #396e96;
+        border-radius: 10px;
+        padding: 10px 40px;
+        font-weight: lighter;
+        font-size: 1.5em;
+        margin: 5px 5px;
+    }
+    
+    .boton2 {
+        position: relative;
+        right: 50px;
+        display: inline-block;
+        background-color: #ffffff;
+        color: #396e96;
+        border-radius: 10px;
+        border-color: #396e96;
+        padding: 10px 20px;
+        font-weight: lighter;
+        font-size: 1.5em;
+        margin: 5px 5px;
+    }
+    
+    .caja2 {
+        
+        display: block;
+        position: relative;
+        right: 12px;
+        width: 700px;
+        height: 325px;
+        padding: 20px 0px;
+        background-color: #ffffff;
+        border-radius: 10%;
+    }
+
+    .display1 {
+        position: absolute;
+    }
+    
+    .pantalla {
+        border: none;
+        resize: none;
+        outline: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.25em;
+        background-color: #ffffff;
+        color: #396e96;
+        position: relative;
+        right: 50px;
+    
+    }
+    
+    .img-caja2 {
+        display: inline-block;
+        padding: 50px 10px;
+        position:relative;
+        left: 50px;
+    }
+    
+    .p-caja2 {
+        display: inline-block;
+        padding: 50px 10px;
+        position: relative;
+        bottom: 50px;
+        text-align: center;
+        left: 40px;
+    }
+    
+    .p1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 5px 5px;
+    }
+    .p2 {
+        font-size: 1em;
+        padding: 5px 5px;
+    }
+    
+    .boton3 {
+        scale: 1.5;
+        position: relative;
+        top: 80px;
+        left: 250px;
+        display: block;
+        background-color: #ffffff;
+        color: #396e96;
+        padding: 5px 5px;
+        margin: 5px 5px;
+    }
+    
+    footer {
+        font-size: 1.5em;
+        color: #396e96;
+        text-align: center;
+        position: relative;
+        left: 30px;
+        top: 10px;
+
+    
+    }
+}
