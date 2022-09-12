@@ -2,8 +2,6 @@
 var boton1 = (document.querySelector(".boton1"));
 var boton2 = (document.querySelector(".boton2"));
 var boton3 = (document.querySelector(".boton3"));
-var lista = ["e","i","a","o","u"];
-var codigo = ["enter","imes","ai","ober","ufat"];
 var imagen = document.querySelector(".lupa");
 var p1 = document.querySelector(".p1");
 var p2 = document.querySelector(".p2");
@@ -15,6 +13,8 @@ boton3.style.display = "none";
 function encriptar() {
 
 var texto = document.querySelector(".input-padron").value;
+texto = texto.toLowerCase();
+document.querySelector(".input-padron").value = "";
 texto = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
 
 mostrar(texto);
@@ -47,5 +47,6 @@ window.getSelection().removeAllRanges();
 window.getSelection().addRange(seleccion);
 var res = document.execCommand('copy');
 window.getSelection().removeRange(seleccion);
+alert("Texto copiado")
 
 }
