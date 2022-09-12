@@ -146,7 +146,7 @@ main {
 }
 
 .boton3:active {
-    scale: 140%;
+    scale: 180%;
     transition: 0.5s all;
 }
 
