@@ -12,41 +12,50 @@ boton3.style.display = "none";
 
 function encriptar() {
 
-var texto = document.querySelector(".input-padron").value;
-texto = texto.toLowerCase();
-document.querySelector(".input-padron").value = "";
-texto = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+    var texto = document.querySelector(".input-padron").value;
+    texto = texto.toLowerCase();
+    document.querySelector(".input-padron").value = "";
+    texto = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
 
-mostrar(texto);
+    if (texto != ("")) {
+        mostrar(texto);
+    }
+    
 }
 
 function desencriptar() {
 
-var texto = document.querySelector(".input-padron").value;
-texto = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
-
-mostrar(texto);
+    var texto = document.querySelector(".input-padron").value;
+    texto = texto.toLowerCase();
+    document.querySelector(".input-padron").value = "";
+    texto = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+   
+    
+    if (texto != ("")) {
+        mostrar(texto);
+    }
+    
 }
 
 function mostrar(resultado) { 
 
-imagen.style.display = "none";
-p1.style.display = "none";
-p2.style.display = "none";
-pantalla.style.display = "initial";
-boton3.style.display = "initial";
-pantalla.textContent = resultado;
+    imagen.style.display = "none";
+    p1.style.display = "none";
+    p2.style.display = "none";
+    pantalla.style.display = "initial";
+    boton3.style.display = "initial";
+    pantalla.textContent = resultado;
 
 }
 
 function copiar() {
-var copiar = document.querySelector(".pantalla");
-var seleccion = document.createRange();
-seleccion.selectNodeContents(copiar);
-window.getSelection().removeAllRanges();
-window.getSelection().addRange(seleccion);
-var res = document.execCommand('copy');
-window.getSelection().removeRange(seleccion);
-alert("Texto copiado")
+    var copiar = document.querySelector(".pantalla");
+    var seleccion = document.createRange();
+    seleccion.selectNodeContents(copiar);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(seleccion);
+    var res = document.execCommand('copy');
+    window.getSelection().removeRange(seleccion);
+    alert("Texto copiado")
 
 }
