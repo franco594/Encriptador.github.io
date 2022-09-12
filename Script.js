@@ -56,6 +56,10 @@ function copiar() {
     window.getSelection().addRange(seleccion);
     var res = document.execCommand('copy');
     window.getSelection().removeRange(seleccion);
-    alert("Texto copiado")
+    swal("Texto copiado","","success", {
+        className: "alert-copy"
+    }
+    );
+    
 
 }
